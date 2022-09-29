@@ -5,10 +5,13 @@ const { species } = data;
 function getSpeciesByIds(...ids) {
   // seu código aqui
   if (ids.length === 0) return ids;
-  // return ids;
+  // return species.filter((specie) => {
+  //   console.log(ids);
+  //   console.log(specie.id);
+  // });
 }
 
 // console.log(getSpeciesByIds(data.species));
-console.log(getSpeciesByIds('e8481c1d-42ea-4610-8e11-1752cfc05a46'));
+console.log(getSpeciesByIds('533bebf3-6bbe-41d8-9cdf-46f7d13b62ae'));
 
 module.exports = getSpeciesByIds;
