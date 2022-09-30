@@ -10,12 +10,11 @@ function getAnimalsOlderThan(animal, age) {
     array.age);
 
   const smallerAge = animalsAges.find((animalAge) => (animalAge < age));
+
   if (smallerAge < age) {
     return false;
   }
   return true;
 }
-
-console.log(getAnimalsOlderThan('otters', 7)); // return false
 
 module.exports = getAnimalsOlderThan;
