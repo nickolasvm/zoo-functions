@@ -2,27 +2,6 @@ const data = require('../data/zoo_data');
 
 const { species } = data;
 
-// recebe { includeNames: true, sex: 'female', sorted: true  }
-// const expected = {
-//   NE: [
-//     { lions: ['Dee', 'Zena'] },
-//     { giraffes: ['Gracia', 'Vicky'] },
-//   ],
-//   NW: [
-//     { tigers: ['Esther', 'Shu'] },
-//     { bears: [] },
-//     { elephants: ['Bea', 'Ilana'] },
-//   ],
-//   SE: [
-//     { penguins: ['Keri'] },
-//     { otters: ['Margherita', 'Mercedes'] },
-//   ],
-//   SW: [
-//     { frogs: ['Annice', 'Cathey'] },
-//     { snakes: ['Paulette'] },
-//   ],
-// };
-
 function filterAnimals(location) {
   const filteredAnimals = species.filter((specie) =>
     specie.location === location);
@@ -86,8 +65,5 @@ function getAnimalMap(options) {
   const { sex, sorted } = options;
   return getAnimalsLocations(true, sex, sorted);
 }
-
-// console.log(filterAnimalsAndResidents('NE'));
-console.table(getAnimalMap({ includeNames: true, sex: 'female', sorted: true }));
 
 module.exports = getAnimalMap;
