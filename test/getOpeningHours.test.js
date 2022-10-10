@@ -13,7 +13,7 @@ describe('Testes da função getOpeningHours, que recebe 2 argumentos, dia da se
       Friday: { open: 10, close: 8 },
       Saturday: { open: 8, close: 10 },
       Sunday: { open: 8, close: 8 },
-      Monday: { open: 0, close: 0 }
+      Monday: { open: 0, close: 0 },
     };
 
     expect(actual).toEqual(expected);
